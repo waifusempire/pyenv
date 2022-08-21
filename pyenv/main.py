@@ -7,18 +7,23 @@ import os
 
 class EnvManager:
     def __init__(self, path: str = ..., mode: Literal["w", "r"] = "r"):
+        found = False
         if path == ...:
             if ".pyenv" in os.listdir():
+                found = True
                 self.__filename = ".pyenv"
                 self.__mode: Literal["w",
                                      "r"] = mode
                 self.__file = None
-            else:
-                if ".pyenv" in os.listdir(path):
-                    self.__filename = path + ".pyenv"
-                    self.__mode: Literal["w",
+        else:
+            if ".pyenv" in os.listdir(path):
+                found = True
+                self.__filename = path + ".pyenv"
+                self.__mode: Literal["w",
                                          "r"] = mode
-                    self.__file = None
+                self.__file = None
+
+        if found: pass
         else:
             raise FileNotFoundError("File '.pyenv' was not found")
 
