@@ -1,8 +1,4 @@
 <!--- <!DOCTYPE html> --->
-<header>
-    <title>pyenv</title>
-    <link rel="img" href="https://cdn.discordapp.com/attachments/891778175900725258/1010988202225565807/Untitled_design__3_-removebg-preview.png"></link>
-</header>
 <body style="background-color: rgb(0, 21, 56); color: rgb(0, 145, 255); position: center;">
 <h1 style="size: 100%;">
 <img width=25 height=25 alt="pyenv logo" aria-placeholder="pyenv-logo" title="pyenv-logo" src="https://cdn.discordapp.com/attachments/891778175900725258/1010988202225565807/Untitled_design__3_-removebg-preview.png"> pyenv </img>
